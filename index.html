@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slithering Snakes &amp; Ladders</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ======================= SETUP SCREEN ======================= -->
+<section id="setup-screen" class="screen">
+  <div class="setup-card">
+    <h1>🐍 Slithering Snakes &amp; Ladders 🪜</h1>
+    <p class="tagline">A shape-shifting board where every snake and ladder moves before your turn.</p>
+
+    <h2>How many players?</h2>
+    <div id="player-count-buttons" class="count-buttons">
+      <button type="button" class="count-btn" data-count="1">1</button>
+      <button type="button" class="count-btn active" data-count="2">2</button>
+      <button type="button" class="count-btn" data-count="3">3</button>
+      <button type="button" class="count-btn" data-count="4">4</button>
+    </div>
+
+    <div id="name-inputs" class="name-inputs"></div>
+
+    <button id="start-game-btn" class="primary-btn">Start Game ▶</button>
+    <p id="setup-error" class="error-msg"></p>
+  </div>
+</section>
+
+<!-- ======================= GAME SCREEN ======================= -->
+<section id="game-screen" class="screen hidden">
+
+  <header class="game-header">
+    <h1 class="title-small">🐍 Slithering Snakes &amp; Ladders 🪜</h1>
+    <button id="restart-btn" class="secondary-btn">Restart</button>
+  </header>
+
+  <div id="turn-indicator" class="turn-indicator"></div>
+
+  <div class="game-layout">
+
+    <!-- Board -->
+    <div class="board-wrapper">
+      <div id="board-container" class="board-container">
+        <div id="board-grid" class="board-grid"></div>
+        <svg id="board-svg" class="board-svg"></svg>
+      </div>
+
+      <div class="legend">
+        <span>🐍 Snake Head</span>
+        <span>🔻 Snake Tail</span>
+        <span>🪜 Ladder Base</span>
+        <span>⬆️ Ladder Top</span>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+      <div class="dice-area">
+        <div id="dice-face" class="dice-face">⚀</div>
+        <button id="roll-btn" class="primary-btn" disabled>Roll Dice 🎲</button>
+      </div>
+
+      <div id="player-list" class="player-list"></div>
+
+      <div class="log-panel">
+        <h3>Event Log</h3>
+        <div id="log-content" class="log-content"></div>
+      </div>
+
+    </aside>
+  </div>
+
+  <!-- Win overlay -->
+  <div id="win-overlay" class="win-overlay hidden">
+    <div class="win-card">
+      <h2 id="win-message">🎉 Winner! 🎉</h2>
+      <button id="play-again-btn" class="primary-btn">Play Again</button>
+    </div>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
