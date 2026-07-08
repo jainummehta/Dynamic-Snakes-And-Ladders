@@ -4,8 +4,7 @@ A dynamic, single-page twist on classic Snakes & Ladders — built with **vanill
 
 The catch: **the board doesn't sit still.** Before every roll, every snake and ladder on the board shifts its head and tail by a random amount. Ladders can scoop you up mid-shift. Snakes can slither right past you. Nothing is ever quite where you left it.
 
-## 🎮 [Play it live here](#) 
-*(Replace this link with your GitHub Pages URL once it's live — see below.)*
+## 🎮 [Play it live here](https://jainummehta.github.io/Dynamic-Snakes-And-Ladders/)
 
 ## Features
 
@@ -26,8 +25,8 @@ The catch: **the board doesn't sit still.** Before every roll, every snake and l
 No build steps, no installs. Just open `index.html` in a browser, or host it anywhere that serves static files (GitHub Pages, Netlify, etc.).
 
 ```
-git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
-cd YOUR-REPO-NAME
+git clone https://github.com/jainummehta/Dynamic-Snakes-And-Ladders.git
+cd Dynamic-Snakes-And-Ladders
 open index.html   # or just double-click it
 ```
 
