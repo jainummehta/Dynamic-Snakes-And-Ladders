@@ -50,3 +50,8 @@ open index.html   # or just double-click it
 ---
 
 Built as a fun experiment in "physics-constrained randomness" — the board reshuffles itself every turn but never breaks its own rules.
+
+## Credits
+
+- **Idea & game design:** Jainum Mehta ([@jainummehta](https://github.com/jainummehta))
+- **Implementation:** built with the help of Claude (Anthropic)
